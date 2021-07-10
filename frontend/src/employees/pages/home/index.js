@@ -3,6 +3,9 @@ import React from "react";
 import TableContent from "./tableContent";
 import FormInput from "employees/components/formInput";
 import { Container, Row, Col } from "reactstrap";
+import { Link } from 'react-router-dom';
+
+
 
 function Home() {
   // Dùng duy nhất cho React Hooks FUNCTION COMPONENT. KHÔNG ĐƯỢC DÙNG REACT CLASS COMPONENT
@@ -46,6 +49,7 @@ function Home() {
           <FormInput onSubmitSuccess={onUpdateSuccess} type="create" />
         </Col>
       </Row>
+      <button ><Link to="/">back to home</Link></button>
     </Container>
   );
 }
