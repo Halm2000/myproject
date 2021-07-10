@@ -15,7 +15,7 @@ import HomeSp from "shippers/pages/home";
 import UpdatePageSp from "shippers/pages/update";
 import HomeSup from "suppliers/pages/home";
 import UpdatePageSup from "suppliers/pages/update";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 
 function App() {
   return (
@@ -70,7 +70,34 @@ function App() {
         <Route path="/suppliers/update/:id">
           <UpdatePageSup />
         </Route>
-
+        <Route path="/" exact>
+          <ul>
+            <Link to="/customers">
+              <li>customers</li>
+            </Link>
+            <Link to="/categories">
+              <li>categories</li>
+            </Link>
+            <Link to="/employees">
+              <li>employees</li>
+            </Link>
+            <Link to="/orderdetails">
+              <li>orderdetails</li>
+            </Link>
+            <Link to="/orders">
+              <li>orders</li>
+            </Link>
+            <Link to="/products">
+              <li>products</li>
+            </Link>
+            <Link to="/shippers">
+              <li>shippers</li>
+            </Link>
+            <Link to="/suppliers">
+              <li>suppliers</li>
+            </Link>
+          </ul>
+        </Route>
 
 
       </Switch>
