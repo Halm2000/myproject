@@ -46,8 +46,9 @@ function Home() {
           <h3 className="text-center">Create Suppliersr</h3>
           <FormInput onSubmitSuccess={onUpdateSuccess} type="create" />
         </Col>
+        <button ><Link to="/">back to home</Link></button>
       </Row>
-      <button ><Link to="/">back to home</Link></button>
+      
     </Container>
   );
 }
